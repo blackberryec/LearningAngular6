@@ -13,13 +13,14 @@ export class DataService {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
 
-  getDetails(userId){
-    return this.http.get('https://jsonplaceholder.typicode.com/users/' + userId)
+  getUser(userId) {
+    return this.http.get('https://jsonplaceholder.typicode.com/users/'+userId)
   }
-  
-  getPosts(){
-    return this.http.get('https://jsonplaceholder.typicode.com/posts/')
+
+  getPosts() {
+    return this.http.get('https://jsonplaceholder.typicode.com/posts')
   }
+
 }
 
 //I used ng generate service data
